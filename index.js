@@ -86,3 +86,20 @@ clipboardElement.addEventListener('click', () => {
   textarea.remove();
   alert('Password copied to clipboard!');
 });
+
+const indicator = document.querySelector('.indicator');
+const weak = document.querySelector('.weak');
+const medium = document.querySelector('.medium');
+const strong = document.querySelector('.strong');
+const input = document.getElementById('result');
+console.log(input.innerText);
+console.log('input', input);
+function trigger() {
+  if (input != '') {
+    console.log(indicator);
+    indicator.style.display = 'block';
+    indicator.style.display = 'flex';
+  } else {
+    indicator.style.display = 'none';
+  }
+}
